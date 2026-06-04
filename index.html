@@ -1,9 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mythraiser Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World! Welcome to my portfolio.</h1>
+<nav class="navbar">
+<div class="logo">MYTHRAISER</div>
+<div class="nav-links">
+<a class="nav-btn-green" href="#about"><i class="fa-solid fa-user"></i> About</a>
+<a class="nav-btn-green" href="#about"><i class="fa-solid fa-map"></i> Journey</a>
+<a class="nav-btn-green" href="#projects & preparations"><i class="fa-solid fa-layer-group"></i> Projects</a>
+<a class="nav-btn-green" href="#favourite"><i class="fa-solid fa-star"></i> Favourite</a>
+<a class="nav-btn-green" href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+</div>
+<button id="themeBtn">🌙</button>
+</nav>
+
+<section class="hero" id="home">
+<div class="hero-text">
+<h3>Hello, I'm</h3>
+<h1><span id="typing"></span></h1>
+<p>IT Student in Japan • Java Developer • Future Software Engineer</p>
+<a class="btn" href="#contact">Let's Get Started →</a>
+</div>
+<div class="hero-avatar">👨‍💻</div>
+</section>
+
+<section id="about" class="section">
+<h2>About Me</h2>
+<p>Passionate IT student studying in Japan with interests in Java, Web Development, System Engineering and Japanese language learning.</p>
+
+<div class="journey-pill">My Journey <i class="fa-solid fa-map-location-dot"></i></div>
+
+<div class="journey-card-panel">
+<p class="journey-subtitle">A timeline of my academic milestones, technical growth, and experiences abroad.</p>
+<div class="table-container">
+<table class="journey-table">
+<thead>
+<tr>
+<th>Date</th>
+<th>Milestone / Comment Line</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="date-col">April 2024</td>
+<td>Arrived in Japan to begin higher education journey as an international IT student.</td>
+</tr>
+<tr>
+<td class="date-col">October 2024</td>
+<td>Completed basic systems design coursework and initiated deep-dive into Java development.</td>
+</tr>
+<tr>
+<td class="date-col">June 2025</td>
+<td>Developed and launched a 2D Java Survival Game using Swing and custom game loop logic.</td>
+</tr>
+<tr>
+<td class="date-col">December 2025</td>
+<td>Passed advanced Japanese language evaluations to improve professional workspace communication.</td>
+</tr>
+<tr>
+<td class="date-col">Present (2026)</td>
+<td>Building modern web applications, refining system engineer skills, and looking for tech opportunities.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<section id="projects & preparations" class="section">
+<h2>My Projects</h2>
+<p style="margin-bottom: 20px; color: #bbb;">A showcase of the web applications, games, and systems I have built.</p>
+<div class="grid">
+    <div class="card project-card">
+        <h3>Portfolio Website</h3>
+        <p>A sleek, responsive portfolio site featuring dark/light modes.</p>
+        <a href="https://amythraiser101-rgb.github.io/portfolio/" target="_blank" class="project-link">See More →</a>
+    </div>
+
+    <div class="card project-card">
+        <h3>Java Survival Game</h3>
+        <p>A 2D top-down game built entirely using Java and Swing.</p>
+        <a href="https://yourusername.github.io/java-survival-game" target="_blank" class="project-link">See More →</a>
+    </div>
+
+    <div class="card project-card">
+        <h3>School Projects</h3>
+        <p>A compilation of database and systems engineering assignments.</p>
+        <a href="https://your-school-demo-link.com" target="_blank" class="project-link">See More →</a>
+    </div>
+</div>
+</section>
+
+<section id="favourite" class="section">
+<h2>My Favourites</h2>
+<p style="margin-bottom: 25px; color: #bbb;">A collection of things I appreciate, from beautiful destinations to local culinary arts and cultural insights.</p>
+
+<div class="fav-grid">
+<div class="card fav-card">
+<div class="fav-img-wrapper">
+<img src="images/fav-places.jpg" alt="Favourite Places" class="fav-img">
+</div>
+<h3><i class="fa-solid fa-earth-asia"></i> Places</h3>
+<p>Exploring scenic landscapes around Japan, from historical shrines to modern cityscape horizons like Fukuoka.</p>
+</div>
+
+<div class="card fav-card">
+<div class="fav-img-wrapper">
+<img src="images/fav-food.jpg" alt="Favourite Food" class="fav-img">
+</div>
+<h3><i class="fa-solid fa-bowl-food"></i> Food</h3>
+<p>Enjoying authentic Japanese cuisine, especially rich Hakata ramen, sushi, and local convenience store treats.</p>
+</div>
+
+<div class="card fav-card">
+<div class="fav-img-wrapper">
+<img src="images/fav-culture.jpg" alt="Favourite Culture" class="fav-img">
+</div>
+<h3><i class="fa-solid fa-torii-gate"></i> Culture</h3>
+<p>Immersing myself in traditional festivals (Matsuri), modern anime/manga subcultures, and the nuances of the Japanese language.</p>
+</div>
+
+<div class="card fav-card">
+<div class="fav-img-wrapper">
+<img src="images/fav-personality.jpg" alt="Personality" class="fav-img">
+</div>
+<h3><i class="fa-solid fa-brain"></i> Personality</h3>
+<p>Driven by logical puzzle-solving, persistent continuous learning, and adapting happily to new international environments.</p>
+</div>
+</div>
+</section>
+
+<section id="contact" class="section">
+<h2>Contact Me</h2>
+<p>Email: yourmail@example.com</p>
+<div class="social-links">
+<a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+<a href="https://linkedin.com/in/yourusername" target="_blank" aria-blank="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+<a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+</div>
+<div class="location-info">
+<p><i class="fa-solid fa-location-dot"></i> Location: Fukuoka, Japan</p>
+</div>
+</section>
+
+<footer>© 2026 Mythraiser Portfolio</footer>
+<script src="script.js"></script>
 </body>
 </html>
